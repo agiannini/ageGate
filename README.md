@@ -3,11 +3,9 @@ The 'Age Gate' uses vanilla JavaScript, cookies and Bootstrap's modal class to p
 
 To see the gate's functionality, open the ageGate.html, or visit https://agiannini.github.io/ageGate/ageGate.html.
 
-To implement the gate into another site, add ageGate.js to the site's static folder and copy the contents of the body of ageGate.html into the body tag in the home page (This includes all style dependencies like fonts and bootstrap cdn). To include background and logo save files as gate_logo.jpg, and gate_background.jpg. To see the gate in another context visit http://162.243.172.246:4000/#/home (you may have to clear cookies if you used remember me on the other examples). These two examples are identical, except for the gate_logo.jpg and gate_background.jpg files.
+To implement the gate into another site, add ageGate.js to the site's static folder and copy the contents of the body of ageGate.html into the body tag in the home page (This includes all style dependencies like fonts and bootstrap cdn). To include background and logo save files as gate_logo.jpg, and gate_background.jpg. To see the gate in another context visit http://162.243.172.246:4000/#/home . These two examples are identical, except for the gate_logo.jpg and gate_background.jpg files.
 
-
-The ageGate consists of four files: ageGate.js, ageGate.html, gate_logo.jpg, gate_background.jpg.
-ageGate.js has a global const variable called AGE_LIMIT which sets the gate’s age limit. The user can easily change the limit by changing this variable. 
+The ageGate consists of four files: ageGate.js, ageGate.html, gate_logo.jpg, gate_background.jpg. ageGate.js has a global const variable called AGE_LIMIT which sets the gate’s age limit. The user can easily change the limit by changing this variable. 
 
 The gate calls on two jpg images called gate_background.jpg and get_logo.jpg. For the purposes of this project, I used ‘New York Distillery’s’ logo and background.
 
