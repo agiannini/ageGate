@@ -1,3 +1,4 @@
+AGE GATE
 
 The 'Age Gate' uses vanilla JavaScript, cookies and Bootstrap's modal class to prompt users for their birthdays before entering a site. 
 
