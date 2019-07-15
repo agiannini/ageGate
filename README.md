@@ -8,8 +8,10 @@ To see the gate's functionality, open the ageGate.html, or visit https://agianni
 
 To see the gate in another context visit http://162.243.172.246:4000/#/home . These two examples are identical, except for the gate_logo.jpg and gate_background.jpg files.
 
-To implement the gate into another site, add ageGate.js to the site's static folder and copy the contents of the body of ageGate.html into the body tag in the home page (This includes all style dependencies like fonts and bootstrap cdn). The gate calls on two jpg images called gate_background.jpg and get_logo.jpg. The program assumes that they are in the same folder as the html. To include background and logo save files as gate_logo.jpg, and gate_background.jpg or modify the html file names. 
-
 The general flow of control is: the program checks to see if the isValid Cookie is set to ‘true’. If so, it displays the home page as normal. If not, it creates a modal, which prevents the user from seeing the page underneath. The modal contains a form which allows the User to enter their birthdate. The form is then validated with the validate() function (this is done with a Date object (called TODAY) and the AGE_LIMIT variable). If valid, the modal disappears and displays the page. If not, an alert is displayed and the page is reloaded.
 
 The modal also contains a checkbox. If the user enters a valid birthday and the box is checked, an isValid cookie will be created on the user's computer. If the box is checked and the user enters an invalid birthday, the cookie will not be set. 
+
+
+To implement the gate into another site, add ageGate.js to the site's static folder and copy the contents of the body of ageGate.html into the body tag in the home page (This includes all style dependencies like fonts and bootstrap cdn). The gate calls on two jpg images called gate_background.jpg and get_logo.jpg. The program assumes that they are in the same folder as the html. To include background and logo save files as gate_logo.jpg, and gate_background.jpg or modify the html file names. 
+
