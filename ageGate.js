@@ -1,13 +1,11 @@
 const TODAY = new Date();
 const AGE_LIMIT = 21;
 
-
-
-// Notes:
+// Purpose: To display the modal if the cookie is not present
+// Notes:   Calls on getter functions to generate <option> tags for the <select> element.
 document.addEventListener("DOMContentLoaded", () =>
 {
-
-  // For Testing
+  //  For Testing (to prevent having to clear cookies)
   //  deleteCookie("isValid");
 
   if (getCookie("isValid") != "true") {
@@ -25,10 +23,8 @@ document.addEventListener("DOMContentLoaded", () =>
 });
 
 
-
-
 // Purpose: To see if the given date fulfills the qualifications.
-// Notes:   Gets Input and Checks Age, Adds Cookie if RememberMe is checked
+// Notes:   Checks against AGE_LIMIT. Only Adds Cookie  if RememberMe is checked
 function validate() {
   yearData = document.getElementById("years").value;
   monthData = document.getElementById("months").value;
@@ -57,9 +53,8 @@ function validate() {
 }
 
 
-
-// Purpose: to generate html for the years selector
-// Returns: a string with html for the last 100 years
+// Purpose: To generate html for the year selector
+// Returns: A string with <options> tags for the last 100 years
 function getYears() {
   yearsHTML = ""
   for (var i = TODAY.getFullYear(); i > TODAY.getFullYear() - 100; --i) {
@@ -69,9 +64,9 @@ function getYears() {
 }
 
 
-// Purpose:   To generate html for the months dataList
-// returns:   A string with the html.
-// Notes:     Option tags display month name, but have a numerical value
+// Purpose:   To generate html for the month selector
+// Returns:   A string with the html.
+// Notes:     <option> tags display month name, but have a numerical value (for later comparison the Date() object.
 function getMonths() {
   let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   let monthsHTML = ""
@@ -82,8 +77,7 @@ function getMonths() {
 }
 
 
-
-// Purpose:   To generate html for the days dataList
+// Purpose:   To generate html for the day selector
 // Returns:   A string with the html
 function getDays() {
   let daysHTML = "";
@@ -96,7 +90,7 @@ function getDays() {
 
 
 // Purpose:   To delete the cookie with the given name.
-// Notes:     Sets expirations to the past.
+// Notes:     Sets expirations to the past. Use for debugging to prevent having to clear cookies.
 function deleteCookie(name) {
   var value = getCookie(name);
   document.cookie = name + "=" + value + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
@@ -125,11 +119,11 @@ function getCookie(name) {
 
 
 
-// Purpose:   This function creates a cookie with the given parameters
+// Purpose:   Creates a cookie with the given parameters
 // Notes:     Cookies are set to expire 10 days from creation
 function makeCookie(name, value) {
   var date = new Date();
-  date.setTime(date.getTime() + 864000000); //current time + 10 days
+  date.setTime(date.getTime() + 864000000);           //current time + 10 days
   var expires = "expires=" + date.toUTCString();
   document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
