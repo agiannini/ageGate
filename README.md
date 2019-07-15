@@ -1,8 +1,9 @@
-README
-This age Gate uses vanilla JavaScript, cookies and Bootstrap’s modal class to prompt users for their birthdays before entering a site. 
 
-To see the gate's functionality, open the ageGate.html. To implement the gate into another site, add ageGate.js to the site's static folder and copy the contents of the body in ageGate.html. Also, include a background and logo and title them gate_logo.jpg, and gate_background.jpg.
+The 'Age Gate' uses vanilla JavaScript, cookies and Bootstrap's modal class to prompt users for their birthdays before entering a site. 
 
+To see the gate's functionality, open the ageGate.html. 
+To implement the gate into another site, add ageGate.js to the site's static folder and copy the contents of the body of ageGate.html into the body tag in the home page. 
+To include background and logo save files as gate_logo.jpg, and gate_background.jpg.
 
 
 The ageGate consists of four files: ageGate.js, ageGate.html, gate_logo.jpg, gate_background.jpg.
