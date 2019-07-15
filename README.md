@@ -8,7 +8,7 @@ To implement the gate into another site, add ageGate.js to the site's static fol
 
 The ageGate consists of four files: ageGate.js, ageGate.html, gate_logo.jpg, gate_background.jpg. ageGate.js has a global const variable called AGE_LIMIT which sets the gate’s age limit. The user can easily change the limit by changing this variable. 
 
-The gate calls on two jpg images called gate_background.jpg and get_logo.jpg. For the purposes of this project, I used New York Distillery’s logo and background.
+The gate calls on two jpg images called gate_background.jpg and get_logo.jpg. For the purposes of this project, I used New York Distillery’s logo and background. Because I do not intend to use their images for commercial purposes, I did not ask their permission to use the logos.
 
 The general flow of control is: the program checks to see if the isValid Cookie is set to ‘true’. If so, it displays the home page as normal. If not, it creates a modal, which prevents the user from seeing the page underneath. The modal contains a form which allows the User to enter their birthdate. The form is then validated with the validate() function (this is done with a Date object (called TODAY) and the AGE_LIMIT variable). If valid, the modal disappears and displays the page. If not, an alert is displayed and the page is reloaded.
 
