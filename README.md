@@ -1,6 +1,6 @@
 AGE GATE
 
-The 'Age Gate' uses vanilla JavaScript, cookies and Bootstrap's modal class to prompt users for their birthdays before entering a site. 
+The 'Age Gate' uses JavaScript, cookies and Bootstrap's modal class to prompt users for their birthdays before entering a site. 
 
 To see the gate's functionality, open the ageGate.html, or visit https://agiannini.github.io/ageGate/ageGate.html. For this example, I used New York Distillery’s logo and background.
 
